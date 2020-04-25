@@ -26,6 +26,6 @@ body {
     width: 50vmin;
     height: 50vmin;
     border-radius: 50%;
-    background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 70%, $pink calc( 80% + 1px ), $pink 100% );
+    background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
   }
 }
