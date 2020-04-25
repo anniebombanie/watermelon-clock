@@ -74,3 +74,66 @@ body {
   top: 40vmin;
   left: 40vmin;
 }
+
+.seeds div:nth-child(1) {
+  top: 34%;
+  left: 30%;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.seeds div:nth-child(2) {
+  top: 5%;
+  left: 20%;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
+}
+
+.seeds div:nth-child(3) {
+  top: 33%;
+  left: 50%;
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
+}
+
+.seeds div:nth-child(4) {
+  top: 2%;
+  left: 40%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.seeds div:nth-child(5) {
+  top: 33%;
+  left: 70%;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+.seeds div:nth-child(6) {
+  top: 3%;
+  left: 60%;
+  -webkit-transform: rotate(23deg);
+          transform: rotate(23deg);
+}
+
+.seeds div:nth-child(7) {
+  left: 60%;
+  top: 55%;
+  -webkit-transform: rotate(29deg);
+          transform: rotate(29deg);
+}
+
+.seeds div:nth-child(8) {
+  top: 3%;
+  left: 80%;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.seeds div:nth-child(9) {
+  left: 40.5%;
+  top: 55%;
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
+}

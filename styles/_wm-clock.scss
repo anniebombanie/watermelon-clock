@@ -107,5 +107,28 @@ body {
     position: absolute;
     top: 40vmin;
     left: 40vmin;
+
+    @for $i from 1 through 9 {
+      &:nth-child( #{$i} ) {
+        @if( $i % 2 == 0 and $i <= 8 ) {
+          top: random( 5 ) + 1%;
+          left: $i * 10%;
+        }
+        @else if( $i < 7 ) {
+          top: random( 5 ) + 30%;
+          left: $i * 10% + 20%;
+        }
+        @else{
+          @if( $i == 7 ) {
+            left: 60%;
+          }
+          @else {
+            left: $i*4.5%;
+          }
+          top : 55%;
+        }
+        transform: rotate( #{ random( 35 ) }deg );
+      }
+    }
   }
 }
