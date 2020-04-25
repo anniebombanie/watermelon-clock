@@ -1,0 +1,35 @@
+$blue: #74c4c8;
+// $blue-dark: #6bb7ba;
+$pink: #ec7277;
+// $pink-hr: #663234;
+// $pink-min: #a35255;
+// $pink-sec: #ffc1cd;
+$white: #e1ecde;
+$green: #079554;
+
+body {
+  background-color: $blue;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  &__outer {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+  }
+
+  &__wm {
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50%;
+    background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 70%, $pink calc( 80% + 1px ), $pink 100% );
+  }
+}
