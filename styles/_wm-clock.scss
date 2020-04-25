@@ -7,118 +7,121 @@ $pink: #ec7277;
 $white: #e1ecde;
 $green: #079554;
 
+$seeds: ( 'seed');
+
 body {
   background-color: $blue;
-  overflow: hidden;
   margin: 0;
-  height: 100%;
 }
 
-.container {
-  &__outer {
+.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  // height: 100%;
+  // width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   clip-path: polygon(63% 31%, 100% 60%, 100% 100%, 60% 100%, 28% 72%);
+  //   background-color: darken( $blue, 22 );
+  //   height: 100%;
+  //   width: 100%;
+  //   top: 0;
+  //   right: 0;
+  //   z-index: -10;
+  // }
+}
+
+.wm {
+  width: 70vmin;
+  height: 70vmin;
+  border-radius: 50%;
+  background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
+  position: relative;
+  box-shadow:
+  -0.3vmin -0.3vmin 0.1vmin $white,
+  0.3vmin 0.3vmin 0.1vmin darken( $blue, 35 ),
+  3vmin 3vmin 0.1vmin darken( $blue, 15 ),
+  // 6vmin 6vmin 0 darken( $blue, 22 ),
+  // 9vmin 9vmin 0 darken( $blue, 22 ),
+  // 12vmin 12vmin 0 darken( $blue, 22 ),
+  // 15vmin 15vmin 0 darken( $blue, 22 ),
+  // 18vmin 18vmin 0 darken( $blue, 22 ),
+  // 21vmin 21vmin 0 darken( $blue, 22 ),
+  // 24vmin 24vmin 0 darken( $blue, 22 ),
+  // 27vmin 27vmin 0 darken( $blue, 22 ),
+  // 30vmin 30vmin 0 darken( $blue, 22 ),
+  // 33vmin 33vmin 0 darken( $blue, 22 ),
+  // 36vmin 36vmin 0 darken( $blue, 22 ),
+  // 39vmin 39vmin 0 darken( $blue, 22 ),
+  // 42vmin 42vmin 0 darken( $blue, 22 ),
+  // 45vmin 45vmin 0 darken( $blue, 22 ),
+  // 48vmin 48vmin 0 darken( $blue, 22 ),
+  // 51vmin 51vmin 0 darken( $blue, 22 ),
+  // 54vmin 54vmin 0 darken( $blue, 22 ),
+  // 57vmin 57vmin 0 darken( $blue, 22 ),
+  // 60vmin 60vmin 0 darken( $blue, 22 ),
+  ;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50%;
+    background-color: darken( $pink, 21 );
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50% );
-    // height: 100%;
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    // &:after {
-    //   content: '';
-    //   display: block;
-    //   position: absolute;
-    //   clip-path: polygon(63% 31%, 100% 60%, 100% 100%, 60% 100%, 28% 72%);
-    //   background-color: darken( $blue, 22 );
-    //   height: 100%;
-    //   width: 100%;
-    //   top: 0;
-    //   right: 0;
-    //   z-index: -10;
-    // }
   }
+}
 
-  &__wm {
-    width: 70vmin;
-    height: 70vmin;
-    border-radius: 50%;
-    background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
-    position: relative;
-    box-shadow:
-    3vmin 3vmin 0 darken( $blue, 15 ),
-    // 6vmin 6vmin 0 darken( $blue, 22 ),
-    // 9vmin 9vmin 0 darken( $blue, 22 ),
-    // 12vmin 12vmin 0 darken( $blue, 22 ),
-    // 15vmin 15vmin 0 darken( $blue, 22 ),
-    // 18vmin 18vmin 0 darken( $blue, 22 ),
-    // 21vmin 21vmin 0 darken( $blue, 22 ),
-    // 24vmin 24vmin 0 darken( $blue, 22 ),
-    // 27vmin 27vmin 0 darken( $blue, 22 ),
-    // 30vmin 30vmin 0 darken( $blue, 22 ),
-    // 33vmin 33vmin 0 darken( $blue, 22 ),
-    // 36vmin 36vmin 0 darken( $blue, 22 ),
-    // 39vmin 39vmin 0 darken( $blue, 22 ),
-    // 42vmin 42vmin 0 darken( $blue, 22 ),
-    // 45vmin 45vmin 0 darken( $blue, 22 ),
-    // 48vmin 48vmin 0 darken( $blue, 22 ),
-    // 51vmin 51vmin 0 darken( $blue, 22 ),
-    // 54vmin 54vmin 0 darken( $blue, 22 ),
-    // 57vmin 57vmin 0 darken( $blue, 22 ),
-    // 60vmin 60vmin 0 darken( $blue, 22 ),
-    ;
+.clock-hands {
+  div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    // transform: translate( -50%, -50% );
+    transform-origin: 50% 100%;
+    // transform: rotate(45deg);
 
-    &:after {
-      content: '';
-      display: block;
-      width: 3.5vmin;
-      height: 3.5vmin;
-      border-radius: 50%;
-      background-color: darken( $pink, 22 );
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate( -50%, -50% );
+    &.h {
+      width: 22vmin;
+      height: 1.2vmin;
+      background-color: darken( $pink, 42 );
+    }
+
+    &.m {
+      width: 28vmin;
+      height: 1.2vmin;
+      background-color: darken( $pink, 28 );
+    }
+
+    &.s {
+      width: 28vmin;
+      height: 0.5vmin;
+      background-color: lighten( $pink, 20 );
     }
   }
 }
 
-.clock-hand {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  // transform: translate( -50%, -50% );
-  // transform-origin: top left;
-  // transform: rotate(45deg);
-
-  &--h {
-    width: 22vmin;
-    height: 1.2vmin;
-    background-color: darken( $pink, 42 );
+.seeds {
+  div {
+    display: block;
+    width: 3.5vmin;
+    height: 2vmin;
+    background-color: darken( $pink, 15 );
+    border-radius: 50%;
+    position: absolute;
+    top: 40vmin;
+    left: 40vmin;
   }
-
-  &--m {
-    width: 28vmin;
-    height: 1.2vmin;
-    background-color: darken( $pink, 30 );
-  }
-
-  &--s {
-    width: 28vmin;
-    height: 0.5vmin;
-    background-color: lighten( $pink, 20 );
-  }
-}
-
-.seed {
-  display: block;
-  width: 3.5vmin;
-  height: 2vmin;
-  background-color: darken( $pink, 22 );
-  border-radius: 50%;
-  position: absolute;
-  top: 40vmin;
-  left: 40vmin;
 }
