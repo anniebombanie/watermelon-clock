@@ -46,7 +46,41 @@ body {
     border-radius: 50%;
     background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
     position: relative;
-    box-shadow: 3vmin 3vmin 0 darken( $blue, 22 );
+    box-shadow:
+    3vmin 3vmin 0 darken( $blue, 15 ),
+    // 6vmin 6vmin 0 darken( $blue, 22 ),
+    // 9vmin 9vmin 0 darken( $blue, 22 ),
+    // 12vmin 12vmin 0 darken( $blue, 22 ),
+    // 15vmin 15vmin 0 darken( $blue, 22 ),
+    // 18vmin 18vmin 0 darken( $blue, 22 ),
+    // 21vmin 21vmin 0 darken( $blue, 22 ),
+    // 24vmin 24vmin 0 darken( $blue, 22 ),
+    // 27vmin 27vmin 0 darken( $blue, 22 ),
+    // 30vmin 30vmin 0 darken( $blue, 22 ),
+    // 33vmin 33vmin 0 darken( $blue, 22 ),
+    // 36vmin 36vmin 0 darken( $blue, 22 ),
+    // 39vmin 39vmin 0 darken( $blue, 22 ),
+    // 42vmin 42vmin 0 darken( $blue, 22 ),
+    // 45vmin 45vmin 0 darken( $blue, 22 ),
+    // 48vmin 48vmin 0 darken( $blue, 22 ),
+    // 51vmin 51vmin 0 darken( $blue, 22 ),
+    // 54vmin 54vmin 0 darken( $blue, 22 ),
+    // 57vmin 57vmin 0 darken( $blue, 22 ),
+    // 60vmin 60vmin 0 darken( $blue, 22 ),
+    ;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 3.5vmin;
+      height: 3.5vmin;
+      border-radius: 50%;
+      background-color: darken( $pink, 22 );
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+    }
   }
 }
 
@@ -54,28 +88,37 @@ body {
   display: block;
   position: absolute;
   left: 50%;
+  top: 50%;
   // transform: translate( -50%, -50% );
   // transform-origin: top left;
   // transform: rotate(45deg);
 
   &--h {
-    top: 50%;
     width: 22vmin;
     height: 1.2vmin;
     background-color: darken( $pink, 42 );
   }
 
   &--m {
-    top: 48%;
     width: 28vmin;
     height: 1.2vmin;
     background-color: darken( $pink, 30 );
   }
 
   &--s {
-    top: 46%;
     width: 28vmin;
-    height: 0.4vmin;
-    background-color: lighten( $pink, 42 );
+    height: 0.5vmin;
+    background-color: lighten( $pink, 20 );
   }
+}
+
+.seed {
+  display: block;
+  width: 3.5vmin;
+  height: 2vmin;
+  background-color: darken( $pink, 22 );
+  border-radius: 50%;
+  position: absolute;
+  top: 40vmin;
+  left: 40vmin;
 }

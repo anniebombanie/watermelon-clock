@@ -19,33 +19,56 @@ body {
   border-radius: 50%;
   background: radial-gradient(ellipse at center, #ec7277, #ec7277 60%, #e1ecde calc( 60% + 1px), #e1ecde 63%, #079554 calc( 63% + 1px), #079554 68%, #056e3e calc( 68% + 1px));
   position: relative;
-  -webkit-box-shadow: 3vmin 3vmin 0 #3a8e92;
-          box-shadow: 3vmin 3vmin 0 #3a8e92;
+  -webkit-box-shadow: 3vmin 3vmin 0 #44a7ac;
+          box-shadow: 3vmin 3vmin 0 #44a7ac;
+}
+
+.container__wm:after {
+  content: '';
+  display: block;
+  width: 3.5vmin;
+  height: 3.5vmin;
+  border-radius: 50%;
+  background-color: #d21c24;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .clock-hand {
   display: block;
   position: absolute;
   left: 50%;
+  top: 50%;
 }
 
 .clock-hand--h {
-  top: 50%;
   width: 22vmin;
   height: 1.2vmin;
   background-color: #781014;
 }
 
 .clock-hand--m {
-  top: 48%;
   width: 28vmin;
   height: 1.2vmin;
   background-color: #ae171e;
 }
 
 .clock-hand--s {
-  top: 46%;
   width: 28vmin;
-  height: 0.4vmin;
-  background-color: white;
+  height: 0.5vmin;
+  background-color: #f8ccce;
+}
+
+.seed {
+  display: block;
+  width: 3.5vmin;
+  height: 2vmin;
+  background-color: #d21c24;
+  border-radius: 50%;
+  position: absolute;
+  top: 40vmin;
+  left: 40vmin;
 }
