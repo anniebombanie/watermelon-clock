@@ -59,40 +59,52 @@ body {
 
 .quarter {
   // background-color: rgba($color: yellow, $alpha: 0.5);
-  height: 88%;
-  width: 88%;
-  // border-radius: 50%;
+  height: 85%;
+  width: 85%;
+  border-radius: 50%;
+  overflow: hidden;
   position: absolute;
 
   div {
-    height: 10%;
-    width: 2.4%;
-    background-color: darken( $pink, 20 );
+    // height: 10%;
+    // width: 2.4%;
+    // background-color: darken( $pink, 20 );
     position: absolute;
 
     &:nth-child( even ) {
-      transform: rotate( 90deg );
-      top: 50% - 5%;
+      top: 50% - 3%;
     }
 
     &:nth-child( odd ){
-      left: 50%;
+      left: 50% - 3%;
     }
 
     &:nth-child( 1 ) {
-      top: 3%;
+      top: -1%;
+      border-left: 1.8vmin solid transparent;
+      border-right: 1.8vmin solid transparent;
+      border-top: 7vmin solid lighten( $pink, 15 );
     }
 
     &:nth-child( 2 ) {
-      right: 7%;
+      right: -1%;
+      border-top: 1.8vmin solid transparent;
+      border-bottom: 1.8vmin solid transparent;
+      border-right: 7vmin solid lighten( $pink, 15 );
     }
 
     &:nth-child( 3 ) {
-      bottom: 3%;
+      bottom: -1%;
+      border-left: 1.8vmin solid transparent;
+      border-right: 1.8vmin solid transparent;
+      border-bottom: 7vmin solid lighten( $pink, 15 );
     }
 
     &:nth-child( 4 ) {
-      left: 7%;
+      left: -1%;
+      border-top: 1.8vmin solid transparent;
+      border-bottom: 1.8vmin solid transparent;
+      border-left: 7vmin solid lighten( $pink, 15 );
     }
   }
 }
