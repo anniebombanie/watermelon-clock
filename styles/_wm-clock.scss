@@ -24,55 +24,77 @@ body {
   border-radius: 50%;
   position: relative;
   background: radial-gradient(ellipse at center, $pink, $pink 60%, $white calc(60% + 1px), $white 63%, $green calc(63% + 1px), $green 68%, darken($green, 8) calc(68% + 1px));
-  box-shadow: -0.3vmin -0.3vmin 0.1vmin $white, 3vmin 3vmin 0.1vmin darken($blue, 15);
+  box-shadow: -0.3vmin -0.3vmin 0.1vmin $white,
+  3vmin 3vmin 0.1vmin darken($blue, 15),
+  // 6vmin 6vmin 0.1vmin darken($blue, 15),
+  // 9vmin 9vmin 0.1vmin darken($blue, 15),
+  // 12vmin 12vmin 0.1vmin darken($blue, 15),
+  // 15vmin 15vmin 0.1vmin darken($blue, 15),
+  // 18vmin 18vmin 0.1vmin darken($blue, 15),
+  // 21vmin 21vmin 0.1vmin darken($blue, 15),
+  // 24vmin 24vmin 0.1vmin darken($blue, 15),
+  // 27vmin 27vmin 0.1vmin darken($blue, 15),
+  // 30vmin 30vmin 0.1vmin darken($blue, 15),
+  // 33vmin 33vmin 0.1vmin darken($blue, 15),
+  // 36vmin 36vmin 0.1vmin darken($blue, 15),
+  // 39vmin 39vmin 0.1vmin darken($blue, 15),
+  // 42vmin 42vmin 0.1vmin darken($blue, 15),
+  // 45vmin 45vmin 0.1vmin darken($blue, 15),
+  // 48vmin 48vmin 0.1vmin darken($blue, 15),
+  // 51vmin 51vmin 0.1vmin darken($blue, 15),
+  // 54vmin 54vmin 0.1vmin darken($blue, 15);
 
-  &:after {
-    content: '';
-    display: block;
-    width: 3.5vmin;
-    height: 3.5vmin;
-    border-radius: 50%;
-    background-color: lighten($pink, 20);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: 3.5vmin;
+  //   height: 3.5vmin;
+  //   border-radius: 50%;
+  //   background-color: lighten($pink, 20);
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
 }
 
-.clock-hands {
-  div {
-    position: absolute;
-    border-radius: 1vmin;
-    transform: rotate(90deg);
-    transform-origin: 0;
+// .clock-hands {
+//   div {
+//     position: absolute;
+//     // top: 50%;
+//     left: 50%;
+//     border-radius: 1vmin;
+//     transform-origin: 0;
+//     // transition: all(0.5s);
+//     transform: rotate(10deg);
 
-    &.h {
-      top: 48.7%;
-      left: 50%;
-      width: 27%;
-      height: 2.4%;
-      background-color: darken($pink, 42);
-    }
+//     &.h {
+//       top: 48.7%;
+//       // left: 50%;
+//       width: 27%;
+//       height: 2.4%;
+//       background-color: darken($pink, 42);
+//     }
 
-    &.m {
-      top: 48.7%;
-      left: 50%;
-      width: 40%;
-      height: 2.4%;
-      background-color: darken($pink, 29);
-    }
+//     &.m {
+//       top: 48.7%;
+//       // left: 50%;
+//       width: 40%;
+//       height: 2.4%;
+//       background-color: darken($pink, 29);
+//     }
 
-    &.s {
-      top: 49.5%;
-      left: 40%;
-      width: 50%;
-      height: 1%;
-      transform-origin: 20.3%;
-      background-color: lighten($pink, 20);
-    }
-  }
-}
+//     &.s {
+//       top: 49.5%;
+//       // left: 50%;
+//       width: 40%;
+//       height: 1%;
+//       // transform-origin: 16%;
+//       // transform: rotate(0deg);
+//       background-color: lighten($pink, 20);
+//     }
+//   }
+// }
 
 .seeds {
   width: 85%;

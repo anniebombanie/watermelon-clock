@@ -30,55 +30,6 @@ body {
           box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 3vmin 3vmin 0.1vmin #44a7ac;
 }
 
-.wm:after {
-  content: '';
-  display: block;
-  width: 3.5vmin;
-  height: 3.5vmin;
-  border-radius: 50%;
-  background-color: #f8ccce;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.clock-hands div {
-  position: absolute;
-  border-radius: 1vmin;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: 0;
-          transform-origin: 0;
-}
-
-.clock-hands div.h {
-  top: 48.7%;
-  left: 50%;
-  width: 27%;
-  height: 2.4%;
-  background-color: #781014;
-}
-
-.clock-hands div.m {
-  top: 48.7%;
-  left: 50%;
-  width: 40%;
-  height: 2.4%;
-  background-color: #b2181e;
-}
-
-.clock-hands div.s {
-  top: 49.5%;
-  left: 40%;
-  width: 50%;
-  height: 1%;
-  -webkit-transform-origin: 20.3%;
-          transform-origin: 20.3%;
-  background-color: #f8ccce;
-}
-
 .seeds {
   width: 85%;
   height: 85%;
@@ -97,106 +48,106 @@ body {
 }
 
 .seeds div:nth-child(1) {
-  top: 27%;
+  top: 45%;
   left: 6%;
-  -webkit-transform: rotate(6deg);
-          transform: rotate(6deg);
+  -webkit-transform: rotate(64deg);
+          transform: rotate(64deg);
 }
 
 .seeds div:nth-child(2) {
-  top: 43%;
+  top: 59%;
   left: 12%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
 
 .seeds div:nth-child(3) {
-  top: 38%;
+  top: 7%;
   left: 18%;
-  -webkit-transform: rotate(80deg);
-          transform: rotate(80deg);
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
 }
 
 .seeds div:nth-child(4) {
   top: 74%;
   left: 24%;
-  -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
 }
 
 .seeds div:nth-child(5) {
-  top: 2%;
+  top: 50%;
   left: 30%;
-  -webkit-transform: rotate(80deg);
-          transform: rotate(80deg);
+  -webkit-transform: rotate(77deg);
+          transform: rotate(77deg);
 }
 
 .seeds div:nth-child(6) {
-  top: 28%;
+  top: 65%;
   left: 36%;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  -webkit-transform: rotate(83deg);
+          transform: rotate(83deg);
 }
 
 .seeds div:nth-child(7) {
-  top: 49%;
+  top: 55%;
   left: 42%;
-  -webkit-transform: rotate(19deg);
-          transform: rotate(19deg);
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
 }
 
 .seeds div:nth-child(8) {
-  top: 43%;
+  top: 56%;
   left: 48%;
-  -webkit-transform: rotate(81deg);
-          transform: rotate(81deg);
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
 }
 
 .seeds div:nth-child(9) {
-  top: 40%;
+  top: 48%;
   left: 54%;
-  -webkit-transform: rotate(82deg);
-          transform: rotate(82deg);
+  -webkit-transform: rotate(37deg);
+          transform: rotate(37deg);
 }
 
 .seeds div:nth-child(10) {
-  top: 65%;
+  top: 78%;
   left: 60%;
-  -webkit-transform: rotate(42deg);
-          transform: rotate(42deg);
+  -webkit-transform: rotate(92deg);
+          transform: rotate(92deg);
 }
 
 .seeds div:nth-child(11) {
-  top: 71%;
+  top: 75%;
   left: 66%;
-  -webkit-transform: rotate(23deg);
-          transform: rotate(23deg);
-}
-
-.seeds div:nth-child(12) {
-  top: 39%;
-  left: 72%;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
 
+.seeds div:nth-child(12) {
+  top: 24%;
+  left: 72%;
+  -webkit-transform: rotate(86deg);
+          transform: rotate(86deg);
+}
+
 .seeds div:nth-child(13) {
-  top: 4%;
+  top: 11%;
   left: 78%;
-  -webkit-transform: rotate(76deg);
-          transform: rotate(76deg);
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .seeds div:nth-child(14) {
-  top: 51%;
+  top: 48%;
   left: 84%;
-  -webkit-transform: rotate(33deg);
-          transform: rotate(33deg);
+  -webkit-transform: rotate(44deg);
+          transform: rotate(44deg);
 }
 
 .seeds div:nth-child(15) {
-  top: 6%;
+  top: 35%;
   left: 90%;
-  -webkit-transform: rotate(74deg);
-          transform: rotate(74deg);
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
 }
