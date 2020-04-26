@@ -15,8 +15,6 @@ function setTime() {
   sHand.style.transform = `rotate( ${sDeg}deg )`;
   mHand.style.transform = `rotate( ${mDeg}deg )`;
   hHand.style.transform = `rotate( ${hDeg}deg )`;
-
-  console.log(sDeg)
 }
 
 setInterval( setTime, 1000 );

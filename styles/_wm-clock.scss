@@ -24,10 +24,11 @@ body {
   border-radius: 50%;
   position: relative;
   background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px ), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
-  box-shadow: -0.3vmin -0.3vmin 0.1vmin $white,
+  box-shadow:
+  -0.3vmin -0.3vmin 0.1vmin $white,
   3vmin 3vmin 0.1vmin darken( $blue, 15 ),
-  // 6vmin 6vmin 0.1vmin darken($blue, 15),
-  // 9vmin 9vmin 0.1vmin darken($blue, 15),
+  // 6vmin 6vmin 0.1vmin darken($blue, 10),
+  // 9vmin 9vmin 0.1vmin darken($blue, 5),
   // 12vmin 12vmin 0.1vmin darken($blue, 15),
   // 15vmin 15vmin 0.1vmin darken($blue, 15),
   // 18vmin 18vmin 0.1vmin darken($blue, 15),
@@ -62,39 +63,31 @@ body {
 .clock-hands {
   div {
     position: absolute;
-    // margin: auto;
-    // top: 0;
-    left: 50%;
     bottom: 50%;
     border-radius: 1vmin;
     transform-origin: 50% 100%;
-    // transition: all 0.05s;
     transform: rotate( 0 );
-    transition-timing-function: cubic-bezier( .25, .1, .31, 1 );
 
     &.h {
-      // top: 48.7%;
-      // left: 50%;
       height: 27%;
       width: 2.4%;
+      left: 50% - 1.2%;
       background-color: darken( $pink, 42 );
     }
 
     &.m {
-      // top: 48.7%;
-      // left: 50%;
       height: 40%;
       width: 2.4%;
-      background-color: darken( $pink, 29 );
+      left: 50% - 1.2%;
+      background-color: darken( $pink, 30 );
     }
 
     &.s {
-      // top: 49.5%;
-      // left: 50%;
-      height: 40%;
+      height: 50%;
       width: 1%;
-      // transform-origin: 16%;
-      // transform: rotate(0deg);
+      left: 50% - 0.5%;
+      bottom: 40%;
+      transform-origin: 50% 80%;
       background-color: lighten( $pink, 20 );
     }
   }
@@ -109,17 +102,17 @@ body {
 
   div {
     display: block;
-    width: 3.5vmin;
-    height: 2vmin;
+    height: 3.5vmin;
+    width: 2vmin;
     background-color: darken( $pink, 15 );
-    border-radius: 50%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     position: absolute;
 
     @for $i from 1 through 15 {
       &:nth-child( #{ $i }) {
         top: random(80) + 1%;
         left: $i * 6%;
-        transform: rotate( #{ random(95) }deg );
+        transform: rotate( #{ random(360) }deg );
       }
     }
   }
