@@ -12,10 +12,19 @@ body {
 }
 
 .wm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70vmin;
   height: 70vmin;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, #ec7277, #ec7277 60%, #e1ecde calc( 60% + 1px), #e1ecde 63%, #079554 calc( 63% + 1px), #079554 68%, #056e3e calc( 68% + 1px));
+  background: radial-gradient(ellipse at center, #ec7277, #ec7277 60%, #e1ecde calc(60% + 1px), #e1ecde 63%, #079554 calc(63% + 1px), #079554 68%, #056e3e calc(68% + 1px));
   position: relative;
   -webkit-box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 0.3vmin 0.3vmin 0.1vmin #276063, 3vmin 3vmin 0.1vmin #44a7ac;
           box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 0.3vmin 0.3vmin 0.1vmin #276063, 3vmin 3vmin 0.1vmin #44a7ac;
@@ -64,6 +73,12 @@ body {
   background-color: #f8ccce;
 }
 
+.seeds {
+  width: 85%;
+  height: 85%;
+  position: relative;
+}
+
 .seeds div {
   display: block;
   width: 3.5vmin;
@@ -71,69 +86,67 @@ body {
   background-color: #e32f36;
   border-radius: 50%;
   position: absolute;
-  top: 40vmin;
-  left: 40vmin;
 }
 
 .seeds div:nth-child(1) {
-  top: 34%;
-  left: 30%;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  top: 25%;
+  left: 8%;
+  -webkit-transform: rotate(52deg);
+          transform: rotate(52deg);
 }
 
 .seeds div:nth-child(2) {
-  top: 5%;
-  left: 20%;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
+  top: 16%;
+  left: 16%;
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
 }
 
 .seeds div:nth-child(3) {
-  top: 33%;
-  left: 50%;
-  -webkit-transform: rotate(33deg);
-          transform: rotate(33deg);
+  top: 19%;
+  left: 24%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
 }
 
 .seeds div:nth-child(4) {
-  top: 2%;
-  left: 40%;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+  top: 62%;
+  left: 32%;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
 }
 
 .seeds div:nth-child(5) {
-  top: 33%;
-  left: 70%;
-  -webkit-transform: rotate(21deg);
-          transform: rotate(21deg);
+  top: 17%;
+  left: 40%;
+  -webkit-transform: rotate(17deg);
+          transform: rotate(17deg);
 }
 
 .seeds div:nth-child(6) {
-  top: 3%;
-  left: 60%;
-  -webkit-transform: rotate(23deg);
-          transform: rotate(23deg);
+  top: 33%;
+  left: 48%;
+  -webkit-transform: rotate(47deg);
+          transform: rotate(47deg);
 }
 
 .seeds div:nth-child(7) {
-  left: 60%;
-  top: 55%;
-  -webkit-transform: rotate(29deg);
-          transform: rotate(29deg);
+  top: 23%;
+  left: 56%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .seeds div:nth-child(8) {
-  top: 3%;
-  left: 80%;
-  -webkit-transform: rotate(1deg);
-          transform: rotate(1deg);
+  top: 27%;
+  left: 64%;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
 }
 
 .seeds div:nth-child(9) {
-  left: 40.5%;
-  top: 55%;
-  -webkit-transform: rotate(21deg);
-          transform: rotate(21deg);
+  top: 57%;
+  left: 72%;
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
 }

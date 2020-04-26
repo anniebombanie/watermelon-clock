@@ -1,13 +1,9 @@
-// $pink-hr: #663234;
-// $pink-min: #a35255;
-// $pink-sec: #ffc1cd;
-// $blue-dark: #6bb7ba;
 $blue: #74c4c8;
 $pink: #ec7277;
 $white: #e1ecde;
 $green: #079554;
 
-$seeds: ( 'seed');
+$seeds: ('seed');
 
 body {
   background-color: $blue;
@@ -18,19 +14,22 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate( -50%, -50% );
+  transform: translate(-50%, -50%);
 }
 
 .wm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70vmin;
   height: 70vmin;
   border-radius: 50%;
-  background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
+  background: radial-gradient(ellipse at center, $pink, $pink 60%, $white calc(60% + 1px), $white 63%, $green calc(63% + 1px), $green 68%, darken($green, 8) calc(68% + 1px));
   position: relative;
   box-shadow:
   -0.3vmin -0.3vmin 0.1vmin $white,
-  0.3vmin 0.3vmin 0.1vmin darken( $blue, 35 ),
-  3vmin 3vmin 0.1vmin darken( $blue, 15 ),
+  0.3vmin 0.3vmin 0.1vmin darken($blue, 35),
+  3vmin 3vmin 0.1vmin darken($blue, 15),
   // 6vmin 6vmin 0 darken( $blue, 22 ),
   // 9vmin 9vmin 0 darken( $blue, 22 ),
   // 12vmin 12vmin 0 darken( $blue, 22 ),
@@ -58,11 +57,11 @@ body {
     width: 3.5vmin;
     height: 3.5vmin;
     border-radius: 50%;
-    background-color: darken( $pink, 21 );
+    background-color: darken($pink, 21);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50% );
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -71,7 +70,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate( 0, -50% );
+    transform: translate(0, -50%);
     transform-origin: 50% 100%;
     // transform: rotate(95deg);
 
@@ -79,55 +78,56 @@ body {
       // transform: rotate(95deg);
       width: 20vmin;
       height: 1.5vmin;
-      background-color: darken( $pink, 42 );
+      background-color: darken($pink, 42);
     }
 
     &.m {
       width: 28vmin;
       height: 1.5vmin;
-      background-color: darken( $pink, 28 );
+      background-color: darken($pink, 28);
     }
 
     &.s {
       left: 40%;
       width: 35vmin;
       height: 0.6vmin;
-      background-color: lighten( $pink, 20 );
+      background-color: lighten($pink, 20);
     }
   }
 }
 
 .seeds {
+  width: 85%;
+  height: 85%;
+  position: relative;
+
   div {
     display: block;
     width: 3.5vmin;
     height: 2vmin;
-    background-color: darken( $pink, 15 );
+    background-color: darken($pink, 15);
     border-radius: 50%;
     position: absolute;
-    top: 40vmin;
-    left: 40vmin;
 
     @for $i from 1 through 9 {
-      &:nth-child( #{$i} ) {
-        @if( $i % 2 == 0 and $i <= 8 ) {
-          top: random( 5 ) + 1%;
-          left: $i * 10%;
-        }
-        @else if( $i < 7 ) {
-          top: random( 5 ) + 30%;
-          left: $i * 10% + 20%;
-        }
-        @else{
-          @if( $i == 7 ) {
-            left: 60%;
-          }
-          @else {
-            left: $i*4.5%;
-          }
-          top : 55%;
-        }
-        transform: rotate( #{ random( 35 ) }deg );
+      &:nth-child(#{ $i }) {
+        top: random(60) + 15%;
+        left: $i * 8%;
+        // @if($i % 2 == 0 and $i <= 8) {
+        //   top: random(10) + 15%;
+        //   left: $i * 10%;
+        // } @else if($i < 7) {
+        //   top: random(9) + 30%;
+        //   left: $i * 10% + 20%;
+        // } @else {
+        //   @if($i == 7) {
+        //     left: 60%;
+        //   } @else {
+        //     left: $i*4.5%;
+        //   }
+        //   top: 70%;
+        // }
+        transform: rotate(#{ random(55) }deg);
       }
     }
   }
