@@ -3,8 +3,6 @@ $pink: #ec7277;
 $white: #e1ecde;
 $green: #079554;
 
-$seeds: ('seed');
-
 body {
   background-color: $blue;
   margin: 0;
@@ -26,30 +24,7 @@ body {
   border-radius: 50%;
   background: radial-gradient(ellipse at center, $pink, $pink 60%, $white calc(60% + 1px), $white 63%, $green calc(63% + 1px), $green 68%, darken($green, 8) calc(68% + 1px));
   position: relative;
-  box-shadow:
-  -0.3vmin -0.3vmin 0.1vmin $white,
-  0.3vmin 0.3vmin 0.1vmin darken($blue, 35),
-  3vmin 3vmin 0.1vmin darken($blue, 15),
-  // 6vmin 6vmin 0 darken( $blue, 22 ),
-  // 9vmin 9vmin 0 darken( $blue, 22 ),
-  // 12vmin 12vmin 0 darken( $blue, 22 ),
-  // 15vmin 15vmin 0 darken( $blue, 22 ),
-  // 18vmin 18vmin 0 darken( $blue, 22 ),
-  // 21vmin 21vmin 0 darken( $blue, 22 ),
-  // 24vmin 24vmin 0 darken( $blue, 22 ),
-  // 27vmin 27vmin 0 darken( $blue, 22 ),
-  // 30vmin 30vmin 0 darken( $blue, 22 ),
-  // 33vmin 33vmin 0 darken( $blue, 22 ),
-  // 36vmin 36vmin 0 darken( $blue, 22 ),
-  // 39vmin 39vmin 0 darken( $blue, 22 ),
-  // 42vmin 42vmin 0 darken( $blue, 22 ),
-  // 45vmin 45vmin 0 darken( $blue, 22 ),
-  // 48vmin 48vmin 0 darken( $blue, 22 ),
-  // 51vmin 51vmin 0 darken( $blue, 22 ),
-  // 54vmin 54vmin 0 darken( $blue, 22 ),
-  // 57vmin 57vmin 0 darken( $blue, 22 ),
-  // 60vmin 60vmin 0 darken( $blue, 22 ),
-  ;
+  box-shadow: -0.3vmin -0.3vmin 0.1vmin $white, 3vmin 3vmin 0.1vmin darken($blue, 15);
 
   &:after {
     content: '';
@@ -99,6 +74,8 @@ body {
 .seeds {
   width: 85%;
   height: 85%;
+  border-radius: 50%;
+  overflow: hidden;
   position: relative;
 
   div {
@@ -109,25 +86,11 @@ body {
     border-radius: 50%;
     position: absolute;
 
-    @for $i from 1 through 9 {
+    @for $i from 1 through 15 {
       &:nth-child(#{ $i }) {
-        top: random(60) + 15%;
-        left: $i * 8%;
-        // @if($i % 2 == 0 and $i <= 8) {
-        //   top: random(10) + 15%;
-        //   left: $i * 10%;
-        // } @else if($i < 7) {
-        //   top: random(9) + 30%;
-        //   left: $i * 10% + 20%;
-        // } @else {
-        //   @if($i == 7) {
-        //     left: 60%;
-        //   } @else {
-        //     left: $i*4.5%;
-        //   }
-        //   top: 70%;
-        // }
-        transform: rotate(#{ random(55) }deg);
+        top: random(80) + 1%;
+        left: $i * 6%;
+        transform: rotate(#{ random(95) }deg);
       }
     }
   }

@@ -26,8 +26,8 @@ body {
   border-radius: 50%;
   background: radial-gradient(ellipse at center, #ec7277, #ec7277 60%, #e1ecde calc(60% + 1px), #e1ecde 63%, #079554 calc(63% + 1px), #079554 68%, #056e3e calc(68% + 1px));
   position: relative;
-  -webkit-box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 0.3vmin 0.3vmin 0.1vmin #276063, 3vmin 3vmin 0.1vmin #44a7ac;
-          box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 0.3vmin 0.3vmin 0.1vmin #276063, 3vmin 3vmin 0.1vmin #44a7ac;
+  -webkit-box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 3vmin 3vmin 0.1vmin #44a7ac;
+          box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 3vmin 3vmin 0.1vmin #44a7ac;
 }
 
 .wm:after {
@@ -76,6 +76,8 @@ body {
 .seeds {
   width: 85%;
   height: 85%;
+  border-radius: 50%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -89,64 +91,106 @@ body {
 }
 
 .seeds div:nth-child(1) {
-  top: 25%;
-  left: 8%;
+  top: 8%;
+  left: 6%;
   -webkit-transform: rotate(52deg);
           transform: rotate(52deg);
 }
 
 .seeds div:nth-child(2) {
-  top: 16%;
-  left: 16%;
-  -webkit-transform: rotate(14deg);
-          transform: rotate(14deg);
+  top: 67%;
+  left: 12%;
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
 }
 
 .seeds div:nth-child(3) {
-  top: 19%;
-  left: 24%;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  top: 17%;
+  left: 18%;
+  -webkit-transform: rotate(92deg);
+          transform: rotate(92deg);
 }
 
 .seeds div:nth-child(4) {
-  top: 62%;
-  left: 32%;
-  -webkit-transform: rotate(27deg);
-          transform: rotate(27deg);
+  top: 12%;
+  left: 24%;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
 }
 
 .seeds div:nth-child(5) {
-  top: 17%;
-  left: 40%;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
+  top: 32%;
+  left: 30%;
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
 }
 
 .seeds div:nth-child(6) {
-  top: 33%;
-  left: 48%;
-  -webkit-transform: rotate(47deg);
-          transform: rotate(47deg);
-}
-
-.seeds div:nth-child(7) {
-  top: 23%;
-  left: 56%;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-
-.seeds div:nth-child(8) {
-  top: 27%;
-  left: 64%;
+  top: 20%;
+  left: 36%;
   -webkit-transform: rotate(42deg);
           transform: rotate(42deg);
 }
 
+.seeds div:nth-child(7) {
+  top: 48%;
+  left: 42%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.seeds div:nth-child(8) {
+  top: 62%;
+  left: 48%;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
 .seeds div:nth-child(9) {
+  top: 51%;
+  left: 54%;
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
+}
+
+.seeds div:nth-child(10) {
+  top: 43%;
+  left: 60%;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+}
+
+.seeds div:nth-child(11) {
+  top: 57%;
+  left: 66%;
+  -webkit-transform: rotate(68deg);
+          transform: rotate(68deg);
+}
+
+.seeds div:nth-child(12) {
   top: 57%;
   left: 72%;
-  -webkit-transform: rotate(46deg);
-          transform: rotate(46deg);
+  -webkit-transform: rotate(85deg);
+          transform: rotate(85deg);
+}
+
+.seeds div:nth-child(13) {
+  top: 10%;
+  left: 78%;
+  -webkit-transform: rotate(85deg);
+          transform: rotate(85deg);
+}
+
+.seeds div:nth-child(14) {
+  top: 68%;
+  left: 84%;
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+}
+
+.seeds div:nth-child(15) {
+  top: 80%;
+  left: 90%;
+  -webkit-transform: rotate(51deg);
+          transform: rotate(51deg);
 }
