@@ -22,8 +22,8 @@ body {
   width: 70vmin;
   height: 70vmin;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, $pink, $pink 60%, $white calc(60% + 1px), $white 63%, $green calc(63% + 1px), $green 68%, darken($green, 8) calc(68% + 1px));
   position: relative;
+  background: radial-gradient(ellipse at center, $pink, $pink 60%, $white calc(60% + 1px), $white 63%, $green calc(63% + 1px), $green 68%, darken($green, 8) calc(68% + 1px));
   box-shadow: -0.3vmin -0.3vmin 0.1vmin $white, 3vmin 3vmin 0.1vmin darken($blue, 15);
 
   &:after {
@@ -43,30 +43,32 @@ body {
 .clock-hands {
   div {
     position: absolute;
-    border-radius: 0 1vmin 1vmin 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(0, -50%);
-    transform-origin: 50% 100%;
-    // transform: rotate(95deg);
+    border-radius: 1vmin;
+    transform: rotate(90deg);
+    transform-origin: 0;
 
     &.h {
-      // transform: rotate(95deg);
+      top: 48.7%;
+      left: 50%;
       width: 27%;
-      height: 1.5vmin;
+      height: 2.4%;
       background-color: darken($pink, 42);
     }
 
     &.m {
+      top: 48.7%;
+      left: 50%;
       width: 40%;
-      height: 1.5vmin;
-      background-color: darken($pink, 28);
+      height: 2.4%;
+      background-color: darken($pink, 29);
     }
 
     &.s {
-      left: 50%;
-      width: 35vmin;
-      height: 0.6vmin;
+      top: 49.5%;
+      left: 40%;
+      width: 50%;
+      height: 1%;
+      transform-origin: 20.3%;
       background-color: lighten($pink, 20);
     }
   }

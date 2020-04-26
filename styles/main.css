@@ -24,8 +24,8 @@ body {
   width: 70vmin;
   height: 70vmin;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, #ec7277, #ec7277 60%, #e1ecde calc(60% + 1px), #e1ecde 63%, #079554 calc(63% + 1px), #079554 68%, #056e3e calc(68% + 1px));
   position: relative;
+  background: radial-gradient(ellipse at center, #ec7277, #ec7277 60%, #e1ecde calc(60% + 1px), #e1ecde 63%, #079554 calc(63% + 1px), #079554 68%, #056e3e calc(68% + 1px));
   -webkit-box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 3vmin 3vmin 0.1vmin #44a7ac;
           box-shadow: -0.3vmin -0.3vmin 0.1vmin #e1ecde, 3vmin 3vmin 0.1vmin #44a7ac;
 }
@@ -46,31 +46,36 @@ body {
 
 .clock-hands div {
   position: absolute;
-  border-radius: 0 1vmin 1vmin 0;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
+  border-radius: 1vmin;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
 }
 
 .clock-hands div.h {
+  top: 48.7%;
+  left: 50%;
   width: 27%;
-  height: 1.5vmin;
+  height: 2.4%;
   background-color: #781014;
 }
 
 .clock-hands div.m {
+  top: 48.7%;
+  left: 50%;
   width: 40%;
-  height: 1.5vmin;
-  background-color: #b7191f;
+  height: 2.4%;
+  background-color: #b2181e;
 }
 
 .clock-hands div.s {
-  left: 50%;
-  width: 35vmin;
-  height: 0.6vmin;
+  top: 49.5%;
+  left: 40%;
+  width: 50%;
+  height: 1%;
+  -webkit-transform-origin: 20.3%;
+          transform-origin: 20.3%;
   background-color: #f8ccce;
 }
 
@@ -92,106 +97,106 @@ body {
 }
 
 .seeds div:nth-child(1) {
-  top: 18%;
+  top: 27%;
   left: 6%;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
 }
 
 .seeds div:nth-child(2) {
-  top: 32%;
+  top: 43%;
   left: 12%;
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .seeds div:nth-child(3) {
-  top: 36%;
+  top: 38%;
   left: 18%;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
 }
 
 .seeds div:nth-child(4) {
-  top: 38%;
+  top: 74%;
   left: 24%;
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+}
+
+.seeds div:nth-child(5) {
+  top: 2%;
+  left: 30%;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+.seeds div:nth-child(6) {
+  top: 28%;
+  left: 36%;
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
 }
 
-.seeds div:nth-child(5) {
-  top: 19%;
-  left: 30%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.seeds div:nth-child(6) {
-  top: 10%;
-  left: 36%;
-  -webkit-transform: rotate(95deg);
-          transform: rotate(95deg);
-}
-
 .seeds div:nth-child(7) {
-  top: 71%;
+  top: 49%;
   left: 42%;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
 }
 
 .seeds div:nth-child(8) {
-  top: 50%;
+  top: 43%;
   left: 48%;
+  -webkit-transform: rotate(81deg);
+          transform: rotate(81deg);
+}
+
+.seeds div:nth-child(9) {
+  top: 40%;
+  left: 54%;
+  -webkit-transform: rotate(82deg);
+          transform: rotate(82deg);
+}
+
+.seeds div:nth-child(10) {
+  top: 65%;
+  left: 60%;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
+.seeds div:nth-child(11) {
+  top: 71%;
+  left: 66%;
+  -webkit-transform: rotate(23deg);
+          transform: rotate(23deg);
+}
+
+.seeds div:nth-child(12) {
+  top: 39%;
+  left: 72%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.seeds div:nth-child(13) {
+  top: 4%;
+  left: 78%;
   -webkit-transform: rotate(76deg);
           transform: rotate(76deg);
 }
 
-.seeds div:nth-child(9) {
-  top: 14%;
-  left: 54%;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
-}
-
-.seeds div:nth-child(10) {
-  top: 29%;
-  left: 60%;
-  -webkit-transform: rotate(21deg);
-          transform: rotate(21deg);
-}
-
-.seeds div:nth-child(11) {
-  top: 14%;
-  left: 66%;
-  -webkit-transform: rotate(47deg);
-          transform: rotate(47deg);
-}
-
-.seeds div:nth-child(12) {
-  top: 45%;
-  left: 72%;
-  -webkit-transform: rotate(61deg);
-          transform: rotate(61deg);
-}
-
-.seeds div:nth-child(13) {
-  top: 13%;
-  left: 78%;
-  -webkit-transform: rotate(78deg);
-          transform: rotate(78deg);
-}
-
 .seeds div:nth-child(14) {
-  top: 50%;
+  top: 51%;
   left: 84%;
-  -webkit-transform: rotate(52deg);
-          transform: rotate(52deg);
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
 }
 
 .seeds div:nth-child(15) {
-  top: 18%;
+  top: 6%;
   left: 90%;
-  -webkit-transform: rotate(94deg);
-          transform: rotate(94deg);
+  -webkit-transform: rotate(74deg);
+          transform: rotate(74deg);
 }
