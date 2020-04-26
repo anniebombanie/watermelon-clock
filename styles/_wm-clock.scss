@@ -15,7 +15,7 @@ body {
   transform: translate( -50%, -50% );
 }
 
-.wm {
+.face {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,15 +61,41 @@ body {
 }
 
 .quarter {
-  height: 10%;
-  width: 2.4%;
-  background-color: darken( $pink, 25 );
+  // background-color: rgba($color: yellow, $alpha: 0.5);
+  height: 88%;
+  width: 88%;
+  // border-radius: 50%;
+  position: absolute;
 
   div {
+    height: 10%;
+    width: 2.4%;
+    background-color: darken( $pink, 20 );
     position: absolute;
 
-    &:nth-child(even) {
+    &:nth-child( even ) {
       transform: rotate( 90deg );
+      top: 50% - 1.2%;
+    }
+
+    &:nth-child( odd ){
+      left: 50% - 1.2%;
+    }
+
+    &:nth-child( 1 ) {
+      top: 3%;
+    }
+
+    &:nth-child( 2 ) {
+      right: 7%;
+    }
+
+    &:nth-child( 3 ) {
+      bottom: 3%;
+    }
+
+    &:nth-child( 4 ) {
+      left: 7%;
     }
   }
 }
