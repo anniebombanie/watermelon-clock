@@ -44,38 +44,19 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.clock-hands div {
+.quarter {
+  height: 10%;
+  width: 2.4%;
+  background-color: #c41a21;
+}
+
+.quarter div {
   position: absolute;
-  bottom: 50%;
-  border-radius: 1vmin;
-  -webkit-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
 }
 
-.clock-hands div.h {
-  height: 27%;
-  width: 2.4%;
-  left: 48.8%;
-  background-color: #781014;
-}
-
-.clock-hands div.m {
-  height: 40%;
-  width: 2.4%;
-  left: 48.8%;
-  background-color: #ae171e;
-}
-
-.clock-hands div.s {
-  height: 50%;
-  width: 1%;
-  left: 49.5%;
-  bottom: 40%;
-  -webkit-transform-origin: 50% 80%;
-          transform-origin: 50% 80%;
-  background-color: #f8ccce;
+.quarter div:nth-child(even) {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .seeds {
@@ -96,106 +77,140 @@ body {
 }
 
 .seeds div:nth-child(1) {
-  top: 31%;
+  top: 78%;
   left: 6%;
-  -webkit-transform: rotate(165deg);
-          transform: rotate(165deg);
+  -webkit-transform: rotate(74deg);
+          transform: rotate(74deg);
 }
 
 .seeds div:nth-child(2) {
-  top: 42%;
+  top: 38%;
   left: 12%;
-  -webkit-transform: rotate(106deg);
-          transform: rotate(106deg);
+  -webkit-transform: rotate(114deg);
+          transform: rotate(114deg);
 }
 
 .seeds div:nth-child(3) {
-  top: 7%;
+  top: 63%;
   left: 18%;
-  -webkit-transform: rotate(305deg);
-          transform: rotate(305deg);
+  -webkit-transform: rotate(248deg);
+          transform: rotate(248deg);
 }
 
 .seeds div:nth-child(4) {
-  top: 43%;
+  top: 30%;
   left: 24%;
-  -webkit-transform: rotate(47deg);
-          transform: rotate(47deg);
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
 }
 
 .seeds div:nth-child(5) {
-  top: 32%;
+  top: 46%;
   left: 30%;
-  -webkit-transform: rotate(21deg);
-          transform: rotate(21deg);
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
 }
 
 .seeds div:nth-child(6) {
-  top: 46%;
+  top: 76%;
   left: 36%;
-  -webkit-transform: rotate(146deg);
-          transform: rotate(146deg);
+  -webkit-transform: rotate(122deg);
+          transform: rotate(122deg);
 }
 
 .seeds div:nth-child(7) {
   top: 67%;
   left: 42%;
-  -webkit-transform: rotate(329deg);
-          transform: rotate(329deg);
+  -webkit-transform: rotate(272deg);
+          transform: rotate(272deg);
 }
 
 .seeds div:nth-child(8) {
-  top: 42%;
+  top: 36%;
   left: 48%;
-  -webkit-transform: rotate(281deg);
-          transform: rotate(281deg);
+  -webkit-transform: rotate(152deg);
+          transform: rotate(152deg);
 }
 
 .seeds div:nth-child(9) {
-  top: 35%;
+  top: 39%;
   left: 54%;
-  -webkit-transform: rotate(98deg);
-          transform: rotate(98deg);
+  -webkit-transform: rotate(61deg);
+          transform: rotate(61deg);
 }
 
 .seeds div:nth-child(10) {
-  top: 53%;
+  top: 10%;
   left: 60%;
-  -webkit-transform: rotate(239deg);
-          transform: rotate(239deg);
+  -webkit-transform: rotate(358deg);
+          transform: rotate(358deg);
 }
 
 .seeds div:nth-child(11) {
-  top: 17%;
+  top: 41%;
   left: 66%;
-  -webkit-transform: rotate(144deg);
-          transform: rotate(144deg);
+  -webkit-transform: rotate(283deg);
+          transform: rotate(283deg);
 }
 
 .seeds div:nth-child(12) {
-  top: 45%;
+  top: 74%;
   left: 72%;
-  -webkit-transform: rotate(332deg);
-          transform: rotate(332deg);
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
 }
 
 .seeds div:nth-child(13) {
-  top: 81%;
+  top: 11%;
   left: 78%;
-  -webkit-transform: rotate(111deg);
-          transform: rotate(111deg);
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
 
 .seeds div:nth-child(14) {
-  top: 13%;
+  top: 34%;
   left: 84%;
-  -webkit-transform: rotate(101deg);
-          transform: rotate(101deg);
+  -webkit-transform: rotate(346deg);
+          transform: rotate(346deg);
 }
 
 .seeds div:nth-child(15) {
-  top: 38%;
+  top: 45%;
   left: 90%;
-  -webkit-transform: rotate(286deg);
-          transform: rotate(286deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.hands div {
+  position: absolute;
+  bottom: 50%;
+  border-radius: 1vmin;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.hands div.h {
+  height: 27%;
+  width: 2.4%;
+  left: 48.8%;
+  background-color: #6f0f13;
+}
+
+.hands div.m {
+  height: 40%;
+  width: 2.4%;
+  left: 48.8%;
+  background-color: #a0161b;
+}
+
+.hands div.s {
+  height: 50%;
+  width: 1%;
+  left: 49.5%;
+  bottom: 40%;
+  -webkit-transform-origin: 50% 80%;
+          transform-origin: 50% 80%;
+  background-color: #f8ccce;
 }

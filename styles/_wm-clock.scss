@@ -60,35 +60,16 @@ body {
   }
 }
 
-.clock-hands {
+.quarter {
+  height: 10%;
+  width: 2.4%;
+  background-color: darken( $pink, 25 );
+
   div {
     position: absolute;
-    bottom: 50%;
-    border-radius: 1vmin;
-    transform-origin: 50% 100%;
-    transform: rotate( 0 );
 
-    &.h {
-      height: 27%;
-      width: 2.4%;
-      left: 50% - 1.2%;
-      background-color: darken( $pink, 42 );
-    }
-
-    &.m {
-      height: 40%;
-      width: 2.4%;
-      left: 50% - 1.2%;
-      background-color: darken( $pink, 30 );
-    }
-
-    &.s {
-      height: 50%;
-      width: 1%;
-      left: 50% - 0.5%;
-      bottom: 40%;
-      transform-origin: 50% 80%;
-      background-color: lighten( $pink, 20 );
+    &:nth-child(even) {
+      transform: rotate( 90deg );
     }
   }
 }
@@ -114,6 +95,39 @@ body {
         left: $i * 6%;
         transform: rotate( #{ random(360) }deg );
       }
+    }
+  }
+}
+
+.hands {
+  div {
+    position: absolute;
+    bottom: 50%;
+    border-radius: 1vmin;
+    transform-origin: 50% 100%;
+    transform: rotate( 0 );
+
+    &.h {
+      height: 27%;
+      width: 2.4%;
+      left: 50% - 1.2%;
+      background-color: darken( $pink, 44 );
+    }
+
+    &.m {
+      height: 40%;
+      width: 2.4%;
+      left: 50% - 1.2%;
+      background-color: darken( $pink, 33 );
+    }
+
+    &.s {
+      height: 50%;
+      width: 1%;
+      left: 50% - 0.5%;
+      bottom: 40%;
+      transform-origin: 50% 80%;
+      background-color: lighten( $pink, 20 );
     }
   }
 }
