@@ -32,7 +32,7 @@ body {
     width: 3.5vmin;
     height: 3.5vmin;
     border-radius: 50%;
-    background-color: darken($pink, 21);
+    background-color: lighten($pink, 20);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,6 +43,7 @@ body {
 .clock-hands {
   div {
     position: absolute;
+    border-radius: 0 1vmin 1vmin 0;
     left: 50%;
     top: 50%;
     transform: translate(0, -50%);
@@ -51,19 +52,19 @@ body {
 
     &.h {
       // transform: rotate(95deg);
-      width: 20vmin;
+      width: 27%;
       height: 1.5vmin;
       background-color: darken($pink, 42);
     }
 
     &.m {
-      width: 28vmin;
+      width: 40%;
       height: 1.5vmin;
       background-color: darken($pink, 28);
     }
 
     &.s {
-      left: 40%;
+      left: 50%;
       width: 35vmin;
       height: 0.6vmin;
       background-color: lighten($pink, 20);
