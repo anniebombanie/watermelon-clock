@@ -24,27 +24,7 @@ body {
   border-radius: 50%;
   position: relative;
   background: radial-gradient( ellipse at center, $pink, $pink 60%, $white calc( 60% + 1px ), $white 63%, $green calc( 63% + 1px ), $green 68%, darken( $green, 8 ) calc( 68% + 1px ));
-  box-shadow:
-  -0.3vmin -0.3vmin 0.1vmin $white,
-  3vmin 3vmin 0.1vmin darken( $blue, 15 ),
-  // 6vmin 6vmin 0.1vmin darken($blue, 10),
-  // 9vmin 9vmin 0.1vmin darken($blue, 5),
-  // 12vmin 12vmin 0.1vmin darken($blue, 15),
-  // 15vmin 15vmin 0.1vmin darken($blue, 15),
-  // 18vmin 18vmin 0.1vmin darken($blue, 15),
-  // 21vmin 21vmin 0.1vmin darken($blue, 15),
-  // 24vmin 24vmin 0.1vmin darken($blue, 15),
-  // 27vmin 27vmin 0.1vmin darken($blue, 15),
-  // 30vmin 30vmin 0.1vmin darken($blue, 15),
-  // 33vmin 33vmin 0.1vmin darken($blue, 15),
-  // 36vmin 36vmin 0.1vmin darken($blue, 15),
-  // 39vmin 39vmin 0.1vmin darken($blue, 15),
-  // 42vmin 42vmin 0.1vmin darken($blue, 15),
-  // 45vmin 45vmin 0.1vmin darken($blue, 15),
-  // 48vmin 48vmin 0.1vmin darken($blue, 15),
-  // 51vmin 51vmin 0.1vmin darken($blue, 15),
-  // 54vmin 54vmin 0.1vmin darken($blue, 15)
-  ;
+  box-shadow: -0.3vmin -0.3vmin 0.1vmin $white, 3vmin 3vmin 0.1vmin darken( $blue, 15 );
 
   &:after {
     content: '';
@@ -58,53 +38,40 @@ body {
 }
 
 .quarter {
-  // background-color: rgba($color: yellow, $alpha: 0.5);
-  height: 85%;
-  width: 85%;
-  border-radius: 50%;
-  overflow: hidden;
+  height: 80%;
+  width: 80%;
   position: absolute;
 
   div {
-    // height: 10%;
-    // width: 2.4%;
-    // background-color: darken( $pink, 20 );
+    height: 10%;
+    width: 2.4%;
+    border-radius: 1vmin;
+    background-color: darken( $pink, 25 );
     position: absolute;
 
     &:nth-child( even ) {
-      top: 50% - 3%;
+      top: 50% - 5%;
+      transform: rotate( 90deg );
     }
 
     &:nth-child( odd ){
-      left: 50% - 3%;
+      left: 50% - 1.2%;
     }
 
     &:nth-child( 1 ) {
-      top: -1%;
-      border-left: 1.8vmin solid transparent;
-      border-right: 1.8vmin solid transparent;
-      border-top: 7vmin solid lighten( $pink, 15 );
+      top: 0;
     }
 
     &:nth-child( 2 ) {
-      right: -1%;
-      border-top: 1.8vmin solid transparent;
-      border-bottom: 1.8vmin solid transparent;
-      border-right: 7vmin solid lighten( $pink, 15 );
+      right: 3%;
     }
 
     &:nth-child( 3 ) {
-      bottom: -1%;
-      border-left: 1.8vmin solid transparent;
-      border-right: 1.8vmin solid transparent;
-      border-bottom: 7vmin solid lighten( $pink, 15 );
+      bottom: 0;
     }
 
     &:nth-child( 4 ) {
-      left: -1%;
-      border-top: 1.8vmin solid transparent;
-      border-bottom: 1.8vmin solid transparent;
-      border-left: 7vmin solid lighten( $pink, 15 );
+      left: 3%;
     }
   }
 }

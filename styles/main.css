@@ -41,51 +41,43 @@ body {
 }
 
 .quarter {
-  height: 85%;
-  width: 85%;
-  border-radius: 50%;
-  overflow: hidden;
+  height: 80%;
+  width: 80%;
   position: absolute;
 }
 
 .quarter div {
+  height: 10%;
+  width: 2.4%;
+  border-radius: 1vmin;
+  background-color: #c41a21;
   position: absolute;
 }
 
 .quarter div:nth-child(even) {
-  top: 47%;
+  top: 45%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .quarter div:nth-child(odd) {
-  left: 47%;
+  left: 48.8%;
 }
 
 .quarter div:nth-child(1) {
-  top: -1%;
-  border-left: 1.8vmin solid transparent;
-  border-right: 1.8vmin solid transparent;
-  border-top: 7vmin solid #f5b5b8;
+  top: 0;
 }
 
 .quarter div:nth-child(2) {
-  right: -1%;
-  border-top: 1.8vmin solid transparent;
-  border-bottom: 1.8vmin solid transparent;
-  border-right: 7vmin solid #f5b5b8;
+  right: 3%;
 }
 
 .quarter div:nth-child(3) {
-  bottom: -1%;
-  border-left: 1.8vmin solid transparent;
-  border-right: 1.8vmin solid transparent;
-  border-bottom: 7vmin solid #f5b5b8;
+  bottom: 0;
 }
 
 .quarter div:nth-child(4) {
-  left: -1%;
-  border-top: 1.8vmin solid transparent;
-  border-bottom: 1.8vmin solid transparent;
-  border-left: 7vmin solid #f5b5b8;
+  left: 3%;
 }
 
 .seeds {
@@ -106,108 +98,108 @@ body {
 }
 
 .seeds div:nth-child(1) {
-  top: 45%;
+  top: 50%;
   left: 6%;
-  -webkit-transform: rotate(228deg);
-          transform: rotate(228deg);
+  -webkit-transform: rotate(121deg);
+          transform: rotate(121deg);
 }
 
 .seeds div:nth-child(2) {
-  top: 48%;
+  top: 38%;
   left: 12%;
-  -webkit-transform: rotate(301deg);
-          transform: rotate(301deg);
+  -webkit-transform: rotate(319deg);
+          transform: rotate(319deg);
 }
 
 .seeds div:nth-child(3) {
-  top: 17%;
+  top: 66%;
   left: 18%;
-  -webkit-transform: rotate(295deg);
-          transform: rotate(295deg);
+  -webkit-transform: rotate(334deg);
+          transform: rotate(334deg);
 }
 
 .seeds div:nth-child(4) {
-  top: 51%;
+  top: 56%;
   left: 24%;
-  -webkit-transform: rotate(286deg);
-          transform: rotate(286deg);
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
 }
 
 .seeds div:nth-child(5) {
-  top: 21%;
+  top: 44%;
   left: 30%;
-  -webkit-transform: rotate(44deg);
-          transform: rotate(44deg);
+  -webkit-transform: rotate(154deg);
+          transform: rotate(154deg);
 }
 
 .seeds div:nth-child(6) {
-  top: 24%;
+  top: 50%;
   left: 36%;
-  -webkit-transform: rotate(143deg);
-          transform: rotate(143deg);
+  -webkit-transform: rotate(236deg);
+          transform: rotate(236deg);
 }
 
 .seeds div:nth-child(7) {
-  top: 76%;
+  top: 32%;
   left: 42%;
-  -webkit-transform: rotate(156deg);
-          transform: rotate(156deg);
+  -webkit-transform: rotate(19deg);
+          transform: rotate(19deg);
 }
 
 .seeds div:nth-child(8) {
-  top: 57%;
+  top: 23%;
   left: 48%;
-  -webkit-transform: rotate(69deg);
-          transform: rotate(69deg);
+  -webkit-transform: rotate(81deg);
+          transform: rotate(81deg);
 }
 
 .seeds div:nth-child(9) {
-  top: 14%;
+  top: 15%;
   left: 54%;
-  -webkit-transform: rotate(291deg);
-          transform: rotate(291deg);
+  -webkit-transform: rotate(81deg);
+          transform: rotate(81deg);
 }
 
 .seeds div:nth-child(10) {
-  top: 25%;
+  top: 76%;
   left: 60%;
-  -webkit-transform: rotate(43deg);
-          transform: rotate(43deg);
+  -webkit-transform: rotate(187deg);
+          transform: rotate(187deg);
 }
 
 .seeds div:nth-child(11) {
-  top: 21%;
+  top: 20%;
   left: 66%;
-  -webkit-transform: rotate(332deg);
-          transform: rotate(332deg);
+  -webkit-transform: rotate(266deg);
+          transform: rotate(266deg);
 }
 
 .seeds div:nth-child(12) {
-  top: 37%;
+  top: 16%;
   left: 72%;
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
+  -webkit-transform: rotate(139deg);
+          transform: rotate(139deg);
 }
 
 .seeds div:nth-child(13) {
-  top: 45%;
+  top: 69%;
   left: 78%;
-  -webkit-transform: rotate(258deg);
-          transform: rotate(258deg);
+  -webkit-transform: rotate(37deg);
+          transform: rotate(37deg);
 }
 
 .seeds div:nth-child(14) {
-  top: 47%;
+  top: 32%;
   left: 84%;
-  -webkit-transform: rotate(156deg);
-          transform: rotate(156deg);
+  -webkit-transform: rotate(109deg);
+          transform: rotate(109deg);
 }
 
 .seeds div:nth-child(15) {
-  top: 14%;
+  top: 73%;
   left: 90%;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -webkit-transform: rotate(261deg);
+          transform: rotate(261deg);
 }
 
 .hands div {
